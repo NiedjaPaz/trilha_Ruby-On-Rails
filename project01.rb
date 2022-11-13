@@ -19,8 +19,15 @@ puts".:Olá Seja Bem-Vindo:."
       puts "[2]Brinquedos:R$60,25"
       puts "[3]Acessórios:R$34,25"
       puts"-----------------------"
-  end 
-#Declaração das variaveis subtotal
+    end
+     
+# Função Sair
+    def sair
+      puts "A opção  selecionada foi SAIR!"
+      puts ".:Obrigada pela visita até breve!:."
+    end
+
+  #Declaração das variaveis subtotal
   subtotal=0.00
   valor=0.00
 #Condição para verificar se o usuário deseja Comprar ou Sair 
@@ -54,7 +61,7 @@ puts".:Olá Seja Bem-Vindo:."
                 puts menuprincipal
                 opcao=gets.chomp.to_i
                     if opcao==2
-                        puts ".:Obrigada pela visita até breve!:."
+                        puts sair
                     else
                       puts produtos
                       opcao=gets.chomp.to_i
@@ -65,6 +72,5 @@ puts".:Olá Seja Bem-Vindo:."
                     end 
             end
 else
-  puts "A opção  selecionada foi SAIR!"
-  puts ".:Obrigada pela visita até breve!:."
+  puts sair
 end
