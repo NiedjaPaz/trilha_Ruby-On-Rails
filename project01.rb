@@ -6,12 +6,34 @@ menus= {"start_menu"=>["Selecione a opção desejada:", "[1] COMPRAR ", "[2] SAI
 #Input para o usário informar o que deseja fazer se comprar ou sair!
     puts menus["start_menu"]
     opcao=gets.chomp.to_i
+<<<<<<< HEAD
 #Função sair 
    def sair 
     puts "A opção  selecionada foi SAIR!"
     puts ".:Obrigada pela visita até breve!:."
    end
 #Declaração das variaveis subtotal
+=======
+
+#Função que é para exbir um menu com os produtos
+    def produtos 
+      puts "A opção  selecionada foi COMPRAR!"
+      puts "Conheça nossos produtos!"
+      puts"-----------------------"
+      puts "[1]Ração:R$257,25"
+      puts "[2]Brinquedos:R$60,25"
+      puts "[3]Acessórios:R$34,25"
+      puts"-----------------------"
+    end
+     
+# Função Sair
+    def sair
+      puts "A opção  selecionada foi SAIR!"
+      puts ".:Obrigada pela visita até breve!:."
+    end
+
+  #Declaração das variaveis subtotal
+>>>>>>> 377c4cf129eca9b8842227bca710c2d20bcfdc67
   subtotal=0.00
   valor=0.00
 #Condição para verificar se o usuário deseja Comprar ou Sair 
@@ -44,7 +66,11 @@ menus= {"start_menu"=>["Selecione a opção desejada:", "[1] COMPRAR ", "[2] SAI
                 puts menus["start_menu"]
                 opcao=gets.chomp.to_i
                     if opcao==2
+<<<<<<< HEAD
                         break
+=======
+                        puts sair
+>>>>>>> 377c4cf129eca9b8842227bca710c2d20bcfdc67
                     else
                       puts menus["product_menu"]
                       produto=gets.chomp.to_i
@@ -54,5 +80,11 @@ menus= {"start_menu"=>["Selecione a opção desejada:", "[1] COMPRAR ", "[2] SAI
                       puts "Subtotal:#{subtotal}"
                     end 
             end
+<<<<<<< HEAD
     end
     puts sair
+=======
+else
+  puts sair
+end
+>>>>>>> 377c4cf129eca9b8842227bca710c2d20bcfdc67
