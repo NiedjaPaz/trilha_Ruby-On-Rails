@@ -1,3 +1,6 @@
+#PROJETO 01 TRILHA ROR INOVA AFRO CESAR
+#DUPLA:LARISSA SANTOS OLIVEIRA E NIEDJA PAZ
+
 #Frase que será exibida na tela para o usuário 
 puts".:HELLO WELCOME TO HAPPY DOG – PET SHOP:."
 #Menu Inicial e de Produtos
@@ -19,6 +22,7 @@ product={"racao" => 257.50 , "brinquedos" =>60.50, "acessorio"=>34.25}
     puts "A opção  selecionada foi SAIR!"
     puts ".:Obrigada pela visita até breve!:."
    end
+  
 # Início do programa!
   puts menus["start_menu"]
   option=gets.chomp.to_i
@@ -52,4 +56,4 @@ product={"racao" => 257.50 , "brinquedos" =>60.50, "acessorio"=>34.25}
               end
     end 
 #Fim do Laço 
-    puts sair
+  puts sair
